@@ -33,6 +33,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 static RingBufferT<float> buffer(BUFFER_LENGTH);
 static RingBufferT<float> record_buffer(BUFFER_LENGTH / 2);
 
+#define SAVE_PCM_STERO_WHEN_PLAY 0
+
 FILE * bbb_output;
 //使用这个回调进行播放
 static int rt_callback(void * output_buffer, void * input_buffer, uint32_t num_bufferframes, double stream_time, RtAudioStreamStatus status, void * user_data)
@@ -44,6 +46,7 @@ static int rt_callback(void * output_buffer, void * input_buffer, uint32_t num_b
 	if (buffer.getAvailableRead())
 	{
 		buffer.read((float*)output_buffer, BUFFER_LENGTH);
+#if SAVE_PCM_STERO_WHEN_PLAY
 		if (bFirst)
 		{
 			bbb_output = fopen(".\\BBBdecoded.pcm", "wb");
@@ -65,6 +68,7 @@ static int rt_callback(void * output_buffer, void * input_buffer, uint32_t num_b
 		{
 			std::cout << "rt_callback pf_output is null ";
 		}
+#endif
 	}
     else memset(output_buffer, 0, BUFFER_LENGTH * sizeof(float));
 
