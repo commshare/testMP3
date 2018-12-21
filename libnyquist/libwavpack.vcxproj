@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{092228A0-6C93-37CC-9F72-1A10A159B073}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>libwavpack</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\edu100dev\dev_audio_player\banzoump3\libnyquist\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libwavpack.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libwavpack_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\edu100dev\dev_audio_player\banzoump3\libnyquist\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libwavpack.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libwavpack</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\edu100dev\dev_audio_player\banzoump3\libnyquist\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">libwavpack.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">libwavpack</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\edu100dev\dev_audio_player\banzoump3\libnyquist\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">libwavpack.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">libwavpack</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SE:/edu100dev/dev_audio_player/banzoump3/libnyquist -BE:/edu100dev/dev_audio_player/banzoump3/libnyquist --check-stamp-file E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeLists.txt;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.13\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\3.13.0\CMakeCCompiler.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\3.13.0\CMakeCXXCompiler.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\3.13.0\CMakeRCCompiler.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\3.13.0\CMakeSystem.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\feature_tests.c;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\feature_tests.cxx;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeLists.txt;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\cmake\CXXhelpers.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SE:/edu100dev/dev_audio_player/banzoump3/libnyquist -BE:/edu100dev/dev_audio_player/banzoump3/libnyquist --check-stamp-file E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeLists.txt;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.13\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\3.13.0\CMakeCCompiler.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\3.13.0\CMakeCXXCompiler.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\3.13.0\CMakeRCCompiler.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\3.13.0\CMakeSystem.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\feature_tests.c;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\feature_tests.cxx;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeLists.txt;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\cmake\CXXhelpers.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SE:/edu100dev/dev_audio_player/banzoump3/libnyquist -BE:/edu100dev/dev_audio_player/banzoump3/libnyquist --check-stamp-file E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeLists.txt;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.13\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\3.13.0\CMakeCCompiler.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\3.13.0\CMakeCXXCompiler.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\3.13.0\CMakeRCCompiler.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\3.13.0\CMakeSystem.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\feature_tests.c;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\feature_tests.cxx;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeLists.txt;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\cmake\CXXhelpers.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SE:/edu100dev/dev_audio_player/banzoump3/libnyquist -BE:/edu100dev/dev_audio_player/banzoump3/libnyquist --check-stamp-file E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeLists.txt;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.13\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\3.13.0\CMakeCCompiler.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\3.13.0\CMakeCXXCompiler.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\3.13.0\CMakeRCCompiler.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\3.13.0\CMakeSystem.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\feature_tests.c;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\feature_tests.cxx;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeLists.txt;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\cmake\CXXhelpers.cmake;E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\common_utils.c" />
+    <ClInclude Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\decorr_tables.h" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\decorr_utils.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\entropy_utils.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\extra1.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\extra2.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\open_filename.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\open_legacy.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\open_raw.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\open_utils.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\pack.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\pack_dns.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\pack_dsd.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\pack_floats.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\pack_utils.c" />
+    <None Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\pack_x64.S" />
+    <None Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\pack_x64.asm" />
+    <None Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\pack_x86.S" />
+    <None Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\pack_x86.asm" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\read_words.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\tag_utils.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\tags.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\unpack.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\unpack3.c" />
+    <ClInclude Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\unpack3.h" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\unpack3_open.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\unpack3_seek.c" />
+    <None Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\unpack_armv7.S" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\unpack_dsd.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\unpack_floats.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\unpack_seek.c" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\unpack_utils.c" />
+    <None Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\unpack_x64.S" />
+    <None Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\unpack_x64.asm" />
+    <None Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\unpack_x86.S" />
+    <None Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\unpack_x86.asm" />
+    <ClInclude Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\wavpack_local.h" />
+    <ClInclude Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\wavpack_version.h" />
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\third_party\wavpack\src\write_words.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\ZERO_CHECK.vcxproj">
+      <Project>{89253C4B-372B-3DE3-BF92-05A7ABD3B685}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,7 @@
+E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeFiles/libnyquist-examples.dir
+E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeFiles/libwavpack.dir
+E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeFiles/libopus.dir
+E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeFiles/libnyquist.dir
+E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeFiles/INSTALL.dir
+E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeFiles/ALL_BUILD.dir
+E:/edu100dev/dev_audio_player/banzoump3/libnyquist/CMakeFiles/ZERO_CHECK.dir

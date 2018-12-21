@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeFiles\acc8bb87ddc3997bbb2cd10af6db23ad\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B215333D-5789-3D04-B4A2-3A75CD4E73BA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\src\Common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\src\Encoders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\src\FlacDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\src\FlacDependencies.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\src\Mp3Decoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\src\MusepackDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\src\MusepackDependencies.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\src\OpusDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\src\OpusDependencies.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\src\VorbisDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\src\VorbisDependencies.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\src\WavDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\src\WavPackDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\include\libnyquist\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\include\libnyquist\Decoders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\include\libnyquist\Encoders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\edu100dev\dev_audio_player\banzoump3\libnyquist\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8017552A-E5DA-3F52-8477-A866AF7AC905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{109E0B48-F7DF-3BB7-B91A-5401F56CD35E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
