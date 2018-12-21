@@ -41,6 +41,7 @@ void mp3_decode_internal(AudioData * d, const std::vector<uint8_t> & fileData)
 {
     mp3dec_t mp3d;
     mp3dec_file_info_t info;
+	//fileData是源数据
     mp3dec_load_buf(&mp3d, (const uint8_t*)fileData.data(), fileData.size(), &info, 0, 0);
 
     d->sampleRate = info.hz;
@@ -48,9 +49,11 @@ void mp3_decode_internal(AudioData * d, const std::vector<uint8_t> & fileData)
     d->sourceFormat = MakeFormatForBits(32, true, false);
     d->lengthSeconds = ((float)info.samples / (float)d->channelCount) / (float)d->sampleRate;
 
+	//mp3文件的总采样点个数
     if (info.samples == 0) throw std::runtime_error("mp3: could not read any data");
 
     d->samples.resize(info.samples);
+	//实际数据是存在info的buffer里的
     std::memcpy(d->samples.data(), info.buffer, sizeof(float) * info.samples);
 }
 
