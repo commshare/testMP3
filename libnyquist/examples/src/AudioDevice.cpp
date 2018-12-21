@@ -33,12 +33,39 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 static RingBufferT<float> buffer(BUFFER_LENGTH);
 static RingBufferT<float> record_buffer(BUFFER_LENGTH / 2);
 
+FILE * bbb_output;
+//使用这个回调进行播放
 static int rt_callback(void * output_buffer, void * input_buffer, uint32_t num_bufferframes, double stream_time, RtAudioStreamStatus status, void * user_data)
 {
+	static bool bFirst = true;
     if (status) std::cerr << "[rtaudio] buffer over or underflow" << std::endl;
 
 	// Playback
-    if (buffer.getAvailableRead()) buffer.read((float*) output_buffer, BUFFER_LENGTH);
+	if (buffer.getAvailableRead())
+	{
+		buffer.read((float*)output_buffer, BUFFER_LENGTH);
+		if (bFirst)
+		{
+			bbb_output = fopen(".\\BBBdecoded.pcm", "wb");
+			if (bbb_output == NULL)
+			{
+				std::cout << "open BBBpcm file fail";
+			}
+			else {
+				//预先写入wav文件头占位
+				std::cout << "open BBBBpcm file ok" << std::endl;
+			}
+			bFirst = false;
+		}
+		if (bbb_output)
+		{
+			fwrite(output_buffer, sizeof(float), BUFFER_LENGTH, bbb_output);
+		}
+		else
+		{
+			std::cout << "rt_callback pf_output is null ";
+		}
+	}
     else memset(output_buffer, 0, BUFFER_LENGTH * sizeof(float));
 
 	// Recording
@@ -66,6 +93,9 @@ AudioDevice::~AudioDevice()
             rtaudio->closeStream();
 		}
     }
+	if (bbb_output) {
+		fclose(bbb_output);
+	}
 }
 
 bool AudioDevice::Open(const int deviceId)
@@ -113,6 +143,7 @@ bool AudioDevice::Play(const std::vector<float> & data)
 {
     if (!rtaudio->isStreamOpen()) return false;
     
+	//BUFFER_LEN是按照双声道来的，拆分为sizeInFrames个播放帧
     // Each frame is the (size/2) cause interleaved channels! 
     int sizeInFrames = ((int) data.size()) / (BUFFER_LENGTH);
     
@@ -120,6 +151,7 @@ bool AudioDevice::Play(const std::vector<float> & data)
     
     while (writeCount < sizeInFrames)
     {
+		//每次向buffer写入这么多数据，进行播放
         bool status = buffer.write((data.data() + (writeCount * BUFFER_LENGTH)), BUFFER_LENGTH);
         if (status) writeCount++;
     }

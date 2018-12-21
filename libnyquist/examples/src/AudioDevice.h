@@ -60,6 +60,7 @@ public:
 	bool Open(const int deviceId);
 	bool Play(const std::vector<float> & data);
 	bool Record(const uint32_t lengthInSamples, std::vector<float> & recordingBuffer);
+
 };
 
 #endif

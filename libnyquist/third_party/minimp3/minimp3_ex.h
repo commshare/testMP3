@@ -8,6 +8,8 @@
 */
 #include "minimp3.h"
 
+#define LOAD_SAVE_PCM 0
+
 #define MP3D_SEEK_TO_BYTE   0
 #define MP3D_SEEK_TO_SAMPLE 1
 #define MP3D_SEEK_TO_SAMPLE_INDEXED 2
@@ -80,6 +82,7 @@ FILE *pf_output;
 //解码后的数据存info的buffer里
 void mp3dec_load_buf(mp3dec_t *dec, const uint8_t *buf, size_t buf_size, mp3dec_file_info_t *info, MP3D_PROGRESS_CB progress_cb, void *user_data)
 {
+#if LOAD_SAVE_PCM
 	pf_output = fopen(".\\AAAdecoded.pcm", "wb");
 	if (pf_output == NULL)
 	{
@@ -90,6 +93,7 @@ void mp3dec_load_buf(mp3dec_t *dec, const uint8_t *buf, size_t buf_size, mp3dec_
 		//fwrite(wav_header(0, 0, 0, 0), 1, 44, pf_output);
 		std::cout << "open pcm file ok"<<std::endl;
 	}
+#endif
     size_t orig_buf_size = buf_size;
     mp3d_sample_t pcm[MINIMP3_MAX_SAMPLES_PER_FRAME];
     mp3dec_frame_info_t frame_info;
@@ -127,7 +131,9 @@ void mp3dec_load_buf(mp3dec_t *dec, const uint8_t *buf, size_t buf_size, mp3dec_
 	info->buffer = (mp3d_sample_t*)malloc(allocated);
 	if (!info->buffer) {
 		//add 分配失败
+#if LOAD_SAVE_PCM
 		fclose(pf_output);
+#endif
 		return;
 	}
     //一帧的采样点个数     
@@ -160,6 +166,7 @@ void mp3dec_load_buf(mp3dec_t *dec, const uint8_t *buf, size_t buf_size, mp3dec_
         frame_bytes = frame_info.frame_bytes;
         buf      += frame_bytes;
         buf_size -= frame_bytes;
+#if LOAD_SAVE_PCM
 		if (samples) 
 		{
 			if (pf_output)
@@ -167,6 +174,7 @@ void mp3dec_load_buf(mp3dec_t *dec, const uint8_t *buf, size_t buf_size, mp3dec_
 				fwrite(info->buffer + info->samples, sizeof(mp3d_sample_t), samples, pf_output);
 			}
 		}
+#endif
         if (samples)
         {
             if (info->hz != frame_info.hz || info->layer != frame_info.layer)
@@ -189,8 +197,10 @@ void mp3dec_load_buf(mp3dec_t *dec, const uint8_t *buf, size_t buf_size, mp3dec_
         info->buffer = (mp3d_sample_t*)realloc(info->buffer, info->samples*sizeof(mp3d_sample_t));
     info->avg_bitrate_kbps = avg_bitrate_kbps/frames;
 
+#if LOAD_SAVE_PCM
 	if(pf_output)
 	fclose(pf_output);
+#endif
 }
 
 void mp3dec_iterate_buf(const uint8_t *buf, size_t buf_size, MP3D_ITERATE_CB callback, void *user_data)

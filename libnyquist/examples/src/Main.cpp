@@ -125,6 +125,7 @@ int main(int argc, const char **argv) try
 	{
 		std::cout << "Playing MONO for: " << fileData->lengthSeconds << " seconds..." << std::endl;
 		std::vector<float> stereoCopy(fileData->samples.size() * 2);
+		//修改stereoCopy的数据
 		MonoToStereo(fileData->samples.data(), stereoCopy.data(), fileData->samples.size());
 		myDevice.Play(stereoCopy);
 	}
