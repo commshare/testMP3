@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\bands.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\celt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\celt_decoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\celt_encoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\celt_lpc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\cwrs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\entcode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\entdec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\entenc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\kiss_fft.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\laplace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\mathops.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\mdct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\modes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\opus_custom_demo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\pitch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\quant_bands.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\rate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\celt\vq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\libopus\src\analysis.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\libopus\src\mlp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\libopus\src\mlp_data.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\libopus\src\opus.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\libopus\src\opus_compare.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\libopus\src\opus_decoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\libopus\src\opus_demo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\libopus\src\opus_encoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\libopus\src\opus_multistream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\libopus\src\opus_multistream_decoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\libopus\src\opus_multistream_encoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\libopus\src\repacketizer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\libopus\src\repacketizer_demo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\opusfile\src\http.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\opusfile\src\info.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\opusfile\src\internal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\opusfile\src\opusfile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\opusfile\src\stream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\opusfile\src\wincerts.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\A2NLSF.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\CNG.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\HP_variable_cutoff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\LPC_analysis_filter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\LPC_inv_pred_gain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\LP_variable_cutoff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\NLSF2A.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\NLSF_VQ.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\NLSF_VQ_weights_laroia.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\NLSF_decode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\NLSF_del_dec_quant.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\NLSF_encode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\NLSF_stabilize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\NLSF_unpack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\NSQ.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\NSQ_del_dec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\PLC.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\VAD.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\VQ_WMat_EC.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\ana_filt_bank_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\biquad_alt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\bwexpander.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\bwexpander_32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\check_control_input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\code_signs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\control_SNR.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\control_audio_bandwidth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\control_codec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\debug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\dec_API.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\decode_core.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\decode_frame.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\decode_indices.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\decode_parameters.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\decode_pitch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\decode_pulses.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\decoder_set_fs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\enc_API.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\encode_indices.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\encode_pulses.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\LPC_analysis_filter_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\LPC_inv_pred_gain_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\LTP_analysis_filter_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\LTP_scale_ctrl_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\apply_sine_window_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\autocorrelation_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\burg_modified_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\bwexpander_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\corrMatrix_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\encode_frame_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\energy_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\find_LPC_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\find_LTP_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\find_pitch_lags_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\find_pred_coefs_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\inner_product_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\k2a_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\levinsondurbin_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\noise_shape_analysis_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\pitch_analysis_core_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\prefilter_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\process_gains_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\regularize_correlations_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\residual_energy_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\scale_copy_vector_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\scale_vector_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\schur_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\solve_LS_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\sort_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\warped_autocorrelation_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\float\wrappers_FLP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\gain_quant.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\init_decoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\init_encoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\inner_prod_aligned.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\interpolate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\lin2log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\log2lin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\pitch_est_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\process_NLSFs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\quant_LTP_gains.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\resampler.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\resampler_down2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\resampler_down2_3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\resampler_private_AR2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\resampler_private_IIR_FIR.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\resampler_private_down_FIR.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\resampler_private_up2_HQ.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\resampler_rom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\shell_coder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\sigm_Q15.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\sort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\stereo_LR_to_MS.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\stereo_MS_to_LR.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\stereo_decode_pred.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\stereo_encode_pred.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\stereo_find_predictor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\stereo_quant_pred.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\sum_sqr_shift.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\table_LSF_cos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\tables_LTP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\tables_NLSF_CB_NB_MB.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\tables_NLSF_CB_WB.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\tables_gain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\tables_other.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\tables_pitch_lag.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\opus\silk\tables_pulses_per_block.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\YY\TEST_VS\testMP3\libnyquist\hone\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EE173957-3EF5-3F8B-91C6-A5C8CD518D38}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

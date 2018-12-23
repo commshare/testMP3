@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\common_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\decorr_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\entropy_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\extra1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\extra2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\open_filename.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\open_legacy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\open_raw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\open_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\pack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\pack_dns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\pack_dsd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\pack_floats.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\pack_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\read_words.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\tag_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\tags.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\unpack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\unpack3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\unpack3_open.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\unpack3_seek.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\unpack_dsd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\unpack_floats.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\unpack_seek.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\unpack_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\write_words.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\decorr_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\unpack3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\wavpack_local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\wavpack_version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\YY\TEST_VS\testMP3\libnyquist\hone\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\pack_x64.S" />
+    <None Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\pack_x64.asm" />
+    <None Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\pack_x86.S" />
+    <None Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\pack_x86.asm" />
+    <None Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\unpack_armv7.S" />
+    <None Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\unpack_x64.S" />
+    <None Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\unpack_x64.asm" />
+    <None Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\unpack_x86.S" />
+    <None Include="E:\YY\TEST_VS\testMP3\libnyquist\third_party\wavpack\src\unpack_x86.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{925ADFE0-F2D6-3CB8-9F43-2C5BB343E106}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EE173957-3EF5-3F8B-91C6-A5C8CD518D38}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

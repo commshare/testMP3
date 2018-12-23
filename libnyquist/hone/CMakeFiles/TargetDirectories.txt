@@ -1,0 +1,7 @@
+E:/YY/TEST_VS/testMP3/libnyquist/hone/CMakeFiles/libnyquist-examples.dir
+E:/YY/TEST_VS/testMP3/libnyquist/hone/CMakeFiles/libwavpack.dir
+E:/YY/TEST_VS/testMP3/libnyquist/hone/CMakeFiles/libopus.dir
+E:/YY/TEST_VS/testMP3/libnyquist/hone/CMakeFiles/libnyquist.dir
+E:/YY/TEST_VS/testMP3/libnyquist/hone/CMakeFiles/INSTALL.dir
+E:/YY/TEST_VS/testMP3/libnyquist/hone/CMakeFiles/ALL_BUILD.dir
+E:/YY/TEST_VS/testMP3/libnyquist/hone/CMakeFiles/ZERO_CHECK.dir
