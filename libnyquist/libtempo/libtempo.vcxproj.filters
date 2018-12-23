@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="audio_io">
+      <UniqueIdentifier>{0dac8d3b-bdb7-4225-af88-ca4b4d40c465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{971e24cc-c486-4213-9650-3b6e74191905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{52599a99-89db-4386-957a-75ca1761f897}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libtempo\audio_io\audio_annotation.h">
+      <Filter>audio_io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libtempo\audio_io\audio_processing.h">
+      <Filter>audio_io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libtempo\main\cli_utils.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libtempo\main\flag_logic.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libtempo\main\plotly.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libtempo\main\present_utils.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libtempo\main\settings.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libtempo\libtempo\curve_utils.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libtempo\libtempo\defines.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libtempo\libtempo\fourier_utils.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libtempo\libtempo\mat_utils.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libtempo\libtempo\math_utils.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libtempo\libtempo\resample.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libtempo\libtempo\signal_utils.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libtempo\libtempo\tempogram_processing.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libtempo\libtempo\tempogram_utils.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="libtempo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libtempo\audio_io\audio_annotation.cpp">
+      <Filter>audio_io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libtempo\audio_io\audio_processing.cpp">
+      <Filter>audio_io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libtempo\main\cli_utils.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libtempo\main\flag_logic.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libtempo\main\main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libtempo\main\plotly.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libtempo\main\present_utils.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libtempo\main\settings.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libtempo\libtempo\curve_utils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libtempo\libtempo\fourier_utils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libtempo\libtempo\mat_utils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libtempo\libtempo\resample.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libtempo\libtempo\signal_utils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libtempo\libtempo\tempogram_processing.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libtempo\libtempo\tempogram_utils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\libtempo\audio_io\CMakeLists.txt">
+      <Filter>audio_io</Filter>
+    </Text>
+    <Text Include="..\..\libtempo\main\CMakeLists.txt">
+      <Filter>main</Filter>
+    </Text>
+    <Text Include="..\..\libtempo\libtempo\CMakeLists.txt">
+      <Filter>src</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{3A193106-B59B-4604-8147-44374D09073C}</ProjectGuid>
+    <ProjectGuid>{AC29A73D-D431-479A-B5A2-107E93DB0B0E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>jukebox</RootNamespace>
+    <RootNamespace>libtempo</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -91,7 +91,6 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>E:\YY\TEST_VS\testMP3\jukebox;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -152,57 +151,41 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\jukebox\jukebox\Decoders\Decoder.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Decoders\DecoderImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Decoders\MIDIDecoderImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Decoders\MP3DecoderImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Decoders\VorbisDecoderImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Decoders\WaveDecoderImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\MIDIFactory.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\MIDIFileImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\MP3FileImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\SoundFile.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\SoundFileImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\VorbisFileImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\WaveFileImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Mixer\Factory.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Mixer\Mixer.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Mixer\MixerImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Sound\Decorators\FadedSoundImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Sound\Decorators\FadeOnStopSoundImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Sound\Factory.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Sound\Sound.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Sound\SoundImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Sound\SoundTransformation.h" />
-    <ClInclude Include="..\..\jukebox\win\Mixer\WindowsMixer.h" />
-    <ClInclude Include="..\..\jukebox\win\Sound\DirectSoundBuffer.h" />
+    <ClInclude Include="..\..\libtempo\audio_io\audio_annotation.h" />
+    <ClInclude Include="..\..\libtempo\audio_io\audio_processing.h" />
+    <ClInclude Include="..\..\libtempo\libtempo\curve_utils.h" />
+    <ClInclude Include="..\..\libtempo\libtempo\defines.h" />
+    <ClInclude Include="..\..\libtempo\libtempo\fourier_utils.h" />
+    <ClInclude Include="..\..\libtempo\libtempo\math_utils.hpp" />
+    <ClInclude Include="..\..\libtempo\libtempo\mat_utils.h" />
+    <ClInclude Include="..\..\libtempo\libtempo\resample.h" />
+    <ClInclude Include="..\..\libtempo\libtempo\signal_utils.h" />
+    <ClInclude Include="..\..\libtempo\libtempo\tempogram_processing.h" />
+    <ClInclude Include="..\..\libtempo\libtempo\tempogram_utils.h" />
+    <ClInclude Include="..\..\libtempo\main\cli_utils.h" />
+    <ClInclude Include="..\..\libtempo\main\flag_logic.h" />
+    <ClInclude Include="..\..\libtempo\main\plotly.h" />
+    <ClInclude Include="..\..\libtempo\main\present_utils.h" />
+    <ClInclude Include="..\..\libtempo\main\settings.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\jukebox\jukebox\Decoders\Decoder.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Decoders\DecoderImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Decoders\MIDIDecoderImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Decoders\MP3DecoderImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Decoders\VorbisDecoderImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Decoders\WaveDecoderImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\MIDIFileImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\MP3FileImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\SoundFile.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\SoundFileImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\VorbisFileImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\WaveFileImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Mixer\Mixer.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Sound\Decorators\FadedSoundImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Sound\Decorators\FadeOnStopSoundImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Sound\Factory.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Sound\Sound.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Sound\SoundImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox_test\demo\loop.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox_test\demo\main.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox_test\demo\play.cpp" />
-    <ClCompile Include="..\..\jukebox\win\Mixer\WindowsMixer.cpp" />
-    <ClCompile Include="..\..\jukebox\win\Sound\DirectSoundBuffer.cpp" />
-    <ClCompile Include="jukebox.cpp" />
+    <ClCompile Include="..\..\libtempo\audio_io\audio_annotation.cpp" />
+    <ClCompile Include="..\..\libtempo\audio_io\audio_processing.cpp" />
+    <ClCompile Include="..\..\libtempo\libtempo\curve_utils.cpp" />
+    <ClCompile Include="..\..\libtempo\libtempo\fourier_utils.cpp" />
+    <ClCompile Include="..\..\libtempo\libtempo\mat_utils.cpp" />
+    <ClCompile Include="..\..\libtempo\libtempo\resample.cpp" />
+    <ClCompile Include="..\..\libtempo\libtempo\signal_utils.cpp" />
+    <ClCompile Include="..\..\libtempo\libtempo\tempogram_processing.cpp" />
+    <ClCompile Include="..\..\libtempo\libtempo\tempogram_utils.cpp" />
+    <ClCompile Include="..\..\libtempo\main\cli_utils.cpp" />
+    <ClCompile Include="..\..\libtempo\main\flag_logic.cpp" />
+    <ClCompile Include="..\..\libtempo\main\main.cpp" />
+    <ClCompile Include="..\..\libtempo\main\plotly.cpp" />
+    <ClCompile Include="..\..\libtempo\main\present_utils.cpp" />
+    <ClCompile Include="..\..\libtempo\main\settings.cpp" />
+    <ClCompile Include="libtempo.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -211,9 +194,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\jukebox\jukebox\FileFormats\BUILD" />
-    <None Include="..\..\jukebox\jukebox\Mixer\BUILD" />
-    <None Include="..\..\jukebox\jukebox\Sound\BUILD" />
+    <Text Include="..\..\libtempo\audio_io\CMakeLists.txt" />
+    <Text Include="..\..\libtempo\libtempo\CMakeLists.txt" />
+    <Text Include="..\..\libtempo\main\CMakeLists.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

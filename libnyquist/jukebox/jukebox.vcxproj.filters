@@ -13,10 +13,112 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{c679355d-e867-4651-9b30-8f330d24533c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\decoder">
+      <UniqueIdentifier>{ac5579e9-e0f1-4850-8a58-9430629ad01a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\FileFormats">
+      <UniqueIdentifier>{1a7058d8-5c91-4d5c-ae14-f3630ce504ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mix">
+      <UniqueIdentifier>{6dd5bbe5-3cdd-4c85-bc43-2147d2cf1292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sound">
+      <UniqueIdentifier>{8e855613-d5f0-4c08-a115-6c669659ca51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sound\Decorators">
+      <UniqueIdentifier>{e5be6b67-d9f3-4863-ab34-c30175260934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win">
+      <UniqueIdentifier>{a4552bec-36fa-4f95-aba3-f7aaa30816e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win\mixer">
+      <UniqueIdentifier>{437d1d58-0fd8-4ffa-9626-c10b05fe0b16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win\sound">
+      <UniqueIdentifier>{ae86f721-ce14-4d0b-8a2f-ee1bfc603ec3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{3476292b-8ce2-4349-b849-fe6e7b3b9233}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\Decoders\Decoder.h">
+      <Filter>src\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\Decoders\DecoderImpl.h">
+      <Filter>src\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\Decoders\MIDIDecoderImpl.h">
+      <Filter>src\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\Decoders\MP3DecoderImpl.h">
+      <Filter>src\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\Decoders\VorbisDecoderImpl.h">
+      <Filter>src\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\Decoders\WaveDecoderImpl.h">
+      <Filter>src\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\MIDIFactory.h">
+      <Filter>src\FileFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\MIDIFileImpl.h">
+      <Filter>src\FileFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\MP3FileImpl.h">
+      <Filter>src\FileFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\SoundFile.h">
+      <Filter>src\FileFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\SoundFileImpl.h">
+      <Filter>src\FileFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\VorbisFileImpl.h">
+      <Filter>src\FileFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\WaveFileImpl.h">
+      <Filter>src\FileFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\Mixer\Factory.h">
+      <Filter>src\mix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\Mixer\Mixer.h">
+      <Filter>src\mix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\Mixer\MixerImpl.h">
+      <Filter>src\mix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\Sound\Factory.h">
+      <Filter>src\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\Sound\Sound.h">
+      <Filter>src\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\Sound\SoundImpl.h">
+      <Filter>src\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\Sound\SoundTransformation.h">
+      <Filter>src\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\Sound\Decorators\FadedSoundImpl.h">
+      <Filter>src\sound\Decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\jukebox\Sound\Decorators\FadeOnStopSoundImpl.h">
+      <Filter>src\sound\Decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\win\Mixer\WindowsMixer.h">
+      <Filter>win\mixer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jukebox\win\Sound\DirectSoundBuffer.h">
+      <Filter>win\sound</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -26,5 +128,85 @@
     <ClCompile Include="jukebox.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\Decoders\Decoder.cpp">
+      <Filter>src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\Decoders\DecoderImpl.cpp">
+      <Filter>src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\Decoders\MIDIDecoderImpl.cpp">
+      <Filter>src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\Decoders\MP3DecoderImpl.cpp">
+      <Filter>src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\Decoders\VorbisDecoderImpl.cpp">
+      <Filter>src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\Decoders\WaveDecoderImpl.cpp">
+      <Filter>src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\MIDIFileImpl.cpp">
+      <Filter>src\FileFormats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\MP3FileImpl.cpp">
+      <Filter>src\FileFormats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\SoundFile.cpp">
+      <Filter>src\FileFormats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\SoundFileImpl.cpp">
+      <Filter>src\FileFormats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\VorbisFileImpl.cpp">
+      <Filter>src\FileFormats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\WaveFileImpl.cpp">
+      <Filter>src\FileFormats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\Mixer\Mixer.cpp">
+      <Filter>src\mix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\Sound\Factory.cpp">
+      <Filter>src\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\Sound\Sound.cpp">
+      <Filter>src\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\Sound\SoundImpl.cpp">
+      <Filter>src\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\Sound\Decorators\FadedSoundImpl.cpp">
+      <Filter>src\sound\Decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox\Sound\Decorators\FadeOnStopSoundImpl.cpp">
+      <Filter>src\sound\Decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\win\Mixer\WindowsMixer.cpp">
+      <Filter>win\mixer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\win\Sound\DirectSoundBuffer.cpp">
+      <Filter>win\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox_test\demo\loop.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox_test\demo\main.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jukebox\jukebox_test\demo\play.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\jukebox\jukebox\FileFormats\BUILD">
+      <Filter>src\FileFormats</Filter>
+    </None>
+    <None Include="..\..\jukebox\jukebox\Mixer\BUILD">
+      <Filter>src\mix</Filter>
+    </None>
+    <None Include="..\..\jukebox\jukebox\Sound\BUILD">
+      <Filter>src\sound</Filter>
+    </None>
   </ItemGroup>
 </Project>

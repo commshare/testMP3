@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{3A193106-B59B-4604-8147-44374D09073C}</ProjectGuid>
+    <ProjectGuid>{1B5ED9CE-E3FA-4234-8728-6A0DFF6E0B07}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>jukebox</RootNamespace>
+    <RootNamespace>misc</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -91,7 +91,6 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>E:\YY\TEST_VS\testMP3\jukebox;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -152,68 +151,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\jukebox\jukebox\Decoders\Decoder.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Decoders\DecoderImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Decoders\MIDIDecoderImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Decoders\MP3DecoderImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Decoders\VorbisDecoderImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Decoders\WaveDecoderImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\MIDIFactory.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\MIDIFileImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\MP3FileImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\SoundFile.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\SoundFileImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\VorbisFileImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\FileFormats\WaveFileImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Mixer\Factory.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Mixer\Mixer.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Mixer\MixerImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Sound\Decorators\FadedSoundImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Sound\Decorators\FadeOnStopSoundImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Sound\Factory.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Sound\Sound.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Sound\SoundImpl.h" />
-    <ClInclude Include="..\..\jukebox\jukebox\Sound\SoundTransformation.h" />
-    <ClInclude Include="..\..\jukebox\win\Mixer\WindowsMixer.h" />
-    <ClInclude Include="..\..\jukebox\win\Sound\DirectSoundBuffer.h" />
+    <ClInclude Include="..\..\Playlist.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\jukebox\jukebox\Decoders\Decoder.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Decoders\DecoderImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Decoders\MIDIDecoderImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Decoders\MP3DecoderImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Decoders\VorbisDecoderImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Decoders\WaveDecoderImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\MIDIFileImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\MP3FileImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\SoundFile.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\SoundFileImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\VorbisFileImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\FileFormats\WaveFileImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Mixer\Mixer.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Sound\Decorators\FadedSoundImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Sound\Decorators\FadeOnStopSoundImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Sound\Factory.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Sound\Sound.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox\Sound\SoundImpl.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox_test\demo\loop.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox_test\demo\main.cpp" />
-    <ClCompile Include="..\..\jukebox\jukebox_test\demo\play.cpp" />
-    <ClCompile Include="..\..\jukebox\win\Mixer\WindowsMixer.cpp" />
-    <ClCompile Include="..\..\jukebox\win\Sound\DirectSoundBuffer.cpp" />
-    <ClCompile Include="jukebox.cpp" />
+    <ClCompile Include="..\..\AudioFileReader.cpp" />
+    <ClCompile Include="..\..\consumer_rtaudio.cpp" />
+    <ClCompile Include="..\..\napi_mp3.cpp" />
+    <ClCompile Include="..\..\RtAudioPCMInterface.cpp" />
+    <ClCompile Include="..\..\SoundMP3.cpp" />
+    <ClCompile Include="..\..\UntzSystem.cpp" />
+    <ClCompile Include="misc.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\jukebox\jukebox\FileFormats\BUILD" />
-    <None Include="..\..\jukebox\jukebox\Mixer\BUILD" />
-    <None Include="..\..\jukebox\jukebox\Sound\BUILD" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

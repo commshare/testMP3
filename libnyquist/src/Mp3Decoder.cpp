@@ -47,6 +47,7 @@ void mp3_decode_internal(AudioData * d, const std::vector<uint8_t> & fileData)
     d->sampleRate = info.hz;
     d->channelCount = info.channels;
     d->sourceFormat = MakeFormatForBits(32, true, false);
+	//一秒钟的长度？我觉得这个samples应该就是总采样点数目
     d->lengthSeconds = ((float)info.samples / (float)d->channelCount) / (float)d->sampleRate;
 
 	//mp3文件的总采样点个数
